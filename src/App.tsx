@@ -1,20 +1,48 @@
-import React, { useEffect, useRef } from 'react';
-import './style/app.css';
+import './style/base.css'
+import './style/border.css'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Guide from './containers/Guide'
+import Login from './containers/Auth/login'
+import Register from './containers/Auth/register'
+import Auth from './containers/Auth'
+import Home from './containers/Home'
+import ProtectedRoute from './components/ProtectedRoute'
 
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <Guide />,
+        errorElement: <div>404 Not found</div>,
+    },
+    {
+        path: '/auth',
+        element: <Auth />,
+        children: [
+            {
+                path: '/auth/login',
+                element: <Login />,
+            },
+            {
+                path: '/auth/register',
+                element: <Register />,
+            },
+        ],
+    },
+    {
+        path: '/home',
+        element: (
+            <ProtectedRoute>
+                <Home />
+            </ProtectedRoute>
+        ),
+    },
+])
 function App() {
-  const refGuidePage = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const guidePage = refGuidePage.current;
-    guidePage?.classList.add('show');
-  },[]);
-  return (
-    <div ref={refGuidePage} className='app guide-page' style={{fontSize:'.2rem'}}>
-      <img src={require('./images/emart_logo_icon_@2x.png')} alt='logo' className='logo' />
-      <h1 className='title'>Emart</h1>
-      <img src={require('./images/slogan@2x.png')} alt='slogan' className='slogan' />
-      <img src={require('./images/next_step_icon_@2x.png')} alt='next' className='next' />
-    </div>
-  );
+    return (
+        <div className="app">
+            <RouterProvider router={router} />
+        </div>
+    )
 }
 
-export default App;
+export default App
