@@ -1,0 +1,26 @@
+.modal {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    font-size: 0.2rem;
+    transition: all 0.5s;
+}
+
+.modal .logo {
+    font-size: 0.32rem;
+}
+
+.noshow-modal {
+    opacity: 0;
+}
