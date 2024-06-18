@@ -1,0 +1,98 @@
+.auth-page .tab {
+    padding: 0.5rem 0 0.92rem 0;
+    line-height: 0.21rem;
+    font-size: 0.18rem;
+    color: #242424;
+    width: 1.14rem;
+    margin: 0 auto;
+}
+
+.auth-page .tab-item {
+    display: inline-block;
+}
+
+.auth-page .active {
+    color: #73d13d;
+    font-weight: bold;
+}
+
+.auth-page .tab-item-right {
+    float: right;
+}
+
+.auth-page .form {
+    margin-bottom: 0.6rem;
+}
+.auth-page .form-item {
+    display: grid;
+    grid-template-rows: auto auto; /* creates two rows, one for title and content, one for error */
+    grid-template-columns: 1fr 3fr; /* creates two columns, one for title, one for content */
+    /* gap: 0.16rem; space between grid items */
+    line-height: 0.24rem;
+    font-size: 0.16rem;
+    padding: 0.16rem 0.3rem;
+    font-size: 0.16rem;
+}
+
+.auth-page .form-item-title {
+    grid-column: 1; /* places title in the first column */
+    grid-row: 1; /* places title in the first row */
+    width: 0.68rem;
+    margin-right: 0.42rem;
+    text-align: justify;
+}
+
+.auth-page .form-item-content {
+    grid-column: 2; /* places content in the second column */
+    grid-row: 1; /* places content in the first row */
+    border: none;
+    /* outline: none; */
+    font-size: 0.16rem;
+    color: #242424;
+    background-color: white;
+}
+
+.auth-page .form-item-content::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #d9d9d9;
+}
+.auth-page .form-item-content::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #d9d9d9;
+}
+.auth-page .form-item-content:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #d9d9d9;
+}
+.auth-page .form-item-content:-moz-placeholder {
+    /* Firefox 18- */
+    color: #d9d9d9;
+}
+
+.auth-page .form-item-error {
+    color: red;
+    font-size: 0.14rem;
+    grid-column: 2;
+    grid-row: 2; /* places error message in the second row */
+}
+
+.auth-page .submit {
+    border-radius: 25px;
+    background: #73d13d;
+    box-shadow: 0px 6px 6px 0px #d9f7be;
+    width: 3.15rem;
+    height: 0.5rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    line-height: 0.5rem;
+}
+
+.auth-page .notice {
+    color: #cf1322;
+    line-height: 0.24rem;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 0.94rem;
+    text-align: center;
+}
