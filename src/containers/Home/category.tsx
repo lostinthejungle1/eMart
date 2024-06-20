@@ -51,7 +51,7 @@ function Category() {
                         src={category.image}
                         alt={category.name}
                     />
-                    <span className="category-name">{category.name}</span>
+                    <div className="category-name">{category.name}</div>
                 </div>
             ))}
         </div>
