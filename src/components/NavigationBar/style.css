@@ -1,0 +1,22 @@
+.navigation-bar .active {
+    color: #73d13d;
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0.05rem;
+    background-color: #fff;
+    color: #d0d9db;
+}
+
+.navigation-bar .navigation-bar-item {
+    width: 0.38rem;
+    font-size: 0.12rem;
+    text-align: center;
+}
+
+.navigation-bar .navigation-bar-item .navigation-bar-item-logo {
+    font-size: 0.25rem;
+}
