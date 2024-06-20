@@ -5,9 +5,10 @@
 }
 
 .page {
-    background-color: #ffffff;
+    background-color: #fff;
     font-size: 0.16rem;
     /* font-family: 思源黑体; */
     width: 100vw;
     height: 100vh;
+    /* padding: 0.1rem; */
 }
