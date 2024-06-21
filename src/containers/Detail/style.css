@@ -1,0 +1,233 @@
+.detail-page {
+    background-color: #fff;
+    /* padding: 0.1rem; */
+    position: relative;
+    background-color: #ececec;
+}
+.detail-page .back-btn {
+    position: absolute;
+    top: 0.15rem;
+    left: 0.1rem;
+    font-size: 0.2rem;
+    z-index: 1;
+}
+.detail-page h2 {
+    font-size: 0.18rem;
+    font-weight: regular;
+    text-align: center;
+    padding-top: 0.2rem;
+}
+.detail-page .thumbnail {
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.detail-page .price-and-sale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 3.6rem;
+    height: 0.7rem;
+    font-size: 0.16rem;
+    background-color: #52c41a;
+    margin: 0 auto;
+    color: white;
+    font-size: 0.2rem;
+    padding: 0.1rem;
+    border-radius: 0.12rem 0.12rem 0 0;
+    /* font-weight: bold; */
+}
+
+.detail-page .price-and-sale .price {
+    font-size: 0.3rem;
+}
+
+.detail-page .title-and-brief {
+    width: 3.6rem;
+    border-radius: 0.12rem;
+    margin: -0.1rem auto 0.1rem;
+    padding: 0.2rem 0.1rem;
+    background-color: #fff;
+}
+
+.detail-page .title-and-brief .title {
+    font-size: 0.18rem;
+    margin-bottom: 0.05rem;
+}
+.detail-page .title-and-brief .brief {
+    font-size: 0.14rem;
+    color: #c9cdd4;
+}
+
+.detail-page .specification {
+    width: 3.6rem;
+    background-color: #fff;
+    margin: 0 auto 0.1rem;
+    padding: 0.1rem 0.1rem;
+    border-radius: 0.12rem;
+}
+.detail-page .specification h3 {
+    font-size: 0.16rem;
+    margin-bottom: 0.1rem;
+}
+.detail-page .specification .specification-item {
+    display: grid;
+    grid-template-columns: 0.61rem 1fr;
+    border: 1px solid #d7d7d7;
+    border-radius: 0.05rem;
+}
+.detail-page .specification .specification-title {
+    grid-column: 1;
+    font-size: 0.14rem;
+    padding: 0.04rem 0.15rem;
+    background-color: #f2f3f5;
+}
+
+.detail-page .specification .specification-content {
+    grid-column: 2;
+    padding: 0.04rem 0.1rem;
+}
+.specification-content::before {
+    content: '以实际购买商品批次为准';
+    display: block;
+}
+
+.detail-page .description {
+    width: 3.6rem;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0.1rem 0.1rem;
+    border-radius: 0.12rem;
+}
+.detail-page .description h3 {
+    font-size: 0.16rem;
+    margin-bottom: 0.1rem;
+}
+
+.detail-page .description .description-content {
+    padding: 0.04rem 0.1rem;
+}
+
+.detail-page::after {
+    content: '';
+    display: block;
+    height: 0.7rem;
+    background-color: #ececec;
+    margin-top: 0.1rem;
+}
+
+.detail-page .add-to-cart-docker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 0.64rem;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0.1rem 0.1rem;
+    position: fixed;
+    bottom: 0;
+}
+.detail-page .add-to-cart-docker .cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0.3rem;
+}
+
+.detail-page .add-to-cart-docker .cart .cart-symbol {
+    width: 0.32rem;
+    height: 0.32rem;
+    position: relative;
+}
+.detail-page .add-to-cart-docker .cart .cart-symbol .cart-icon {
+    font-size: 0.3rem;
+}
+
+.detail-page .add-to-cart-docker .cart .cart-symbol .cart-num {
+    position: absolute;
+    width: 0.16rem;
+    height: 0.16rem;
+    background-color: #52c41a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    right: 0;
+    top: -0.02rem;
+}
+.detail-page .add-to-cart-docker .add-btn {
+    width: 2.39rem;
+    height: 0.44rem;
+    background-color: #52c41a;
+    color: white;
+    font-size: 0.16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.12rem;
+    border: 0px solid #fff;
+}
+.pop-content .brief-block {
+    width: 3.44rem;
+    margin: 0.19rem auto 0;
+    padding-bottom: 0.34rem;
+    border-bottom: 1px solid #f0f0f0;
+    display: grid;
+    grid-template-columns: 0.7rem 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.pop-content .pop-thumbnail {
+    width: 0.69rem;
+    height: 0.69rem;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.pop-content .pop-title {
+    margin-left: 0.47rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.pop-content .pop-price {
+    margin-left: 0.47rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 0.18rem;
+    color: #f81c00;
+}
+.pop-content .number-row {
+    font-size: 0.14rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.32rem 0.16rem 0;
+}
+.pop-content .number-input {
+    display: flex;
+    gap: 0.1rem;
+    font-size: 0.18rem;
+}
+.pop-content .number-input span {
+    width: 0.28rem;
+    height: 0.28rem;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pop-content .add-btn {
+    width: 3.43rem;
+    height: 0.44rem;
+    background-color: #52c41a;
+    color: white;
+    font-size: 0.16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.12rem;
+    border: 0px solid #fff;
+    margin: 0.43rem auto 0.1rem;
+}
