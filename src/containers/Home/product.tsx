@@ -3,10 +3,17 @@ type ProductProps = {
     price: string
     title: string
     onAddToCart: () => void
+    onClick: () => void
 }
-function Product({ thumbnail_url, price, title, onAddToCart }: ProductProps) {
+function Product({
+    thumbnail_url,
+    price,
+    title,
+    onAddToCart,
+    onClick,
+}: ProductProps) {
     return (
-        <div className="product">
+        <div className="product" onClick={onClick}>
             <img
                 src={thumbnail_url}
                 alt={title}

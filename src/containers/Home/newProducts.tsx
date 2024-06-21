@@ -1,6 +1,7 @@
 import Product from './product'
 import { IoMdFlame } from 'react-icons/io'
 import { FaCircleChevronRight } from 'react-icons/fa6'
+import { useNavigate } from 'react-router-dom'
 
 type products = Array<{
     product_id: number
@@ -9,6 +10,12 @@ type products = Array<{
     title: string
 }>
 function NewProducts({ products }: { products: products }) {
+    const navifgate = useNavigate()
+
+    const handleClickProduct = (id: number) => {
+        navifgate(`/detail/${id}`)
+    }
+
     return (
         <div className="new-products">
             <h3 className="new-products-title">
@@ -26,6 +33,7 @@ function NewProducts({ products }: { products: products }) {
                         thumbnail_url={product.thumbnail_url}
                         price={product.price}
                         title={product.title}
+                        onClick={() => handleClickProduct(product.product_id)}
                         onAddToCart={() => {
                             console.log('Add to cart:', product.title)
                         }}
