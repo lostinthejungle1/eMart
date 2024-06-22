@@ -6,3 +6,124 @@
     bottom: 0;
     width: 100%;
 }
+.category-page .search-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.category-page .search-icon {
+    position: absolute;
+    left: 0.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.16rem;
+}
+.category-page .search-bar {
+    width: 3.55rem;
+    height: 0.32rem;
+    background-color: #f5f9fa;
+    border: none;
+    padding-left: 0.3rem;
+    margin: 0 auto;
+}
+.product-container {
+    width: 2.79rem;
+    /* height: 0.96rem; */
+    display: flex;
+    border: 1px solid #f5f9fa;
+    align-items: center;
+    justify-content: center;
+}
+.product-container .product-img {
+    width: 0.78rem;
+    height: 0.78rem;
+    margin-right: 0.1rem;
+}
+
+.product-container .product-info {
+    width: 1.73rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.product-container .product-info .product-title {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.product-container .product-info .product-sales {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: #b1b1b1;
+    font-size: 0.12rem;
+    margin-top: 0.01rem;
+}
+
+.product-container .product-info .product-price {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    align-self: flex-end;
+    color: #cf1322;
+    font-size: 0.14rem;
+}
+.product-container .product-info .product-price::before {
+    content: '￥';
+    font-size: 0.12rem;
+}
+
+.product-container .product-info .purchase-btn {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    justify-self: end;
+    background-color: #73d13d;
+    color: #fff;
+    padding: 0.02rem 0.08rem;
+    border: none;
+    border-radius: 0.04rem;
+}
+
+.category-page .category-container {
+    display: flex;
+}
+.category-page .category-container .category-filter {
+    width: 0.96rem;
+    text-align: center;
+}
+
+.category-item {
+    height: 0.52rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f9fa;
+}
+.category-item.selectedCategory {
+    background-color: #fff;
+}
+.category-page .category-container .pirce-filter-and-product-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-filter {
+    display: flex;
+    white-space: nowrap;
+    padding: 0.1rem;
+    gap: 0.1rem;
+    width: 2.79rem;
+    overflow-x: auto;
+}
+
+.price-filter-item {
+    height: 0.32rem;
+    background-color: #f5f9fa;
+    padding: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.04rem;
+}
+.price-filter-item.selectedPrice {
+    background-color: #d9f7be;
+    color: #52c41a;
+}
