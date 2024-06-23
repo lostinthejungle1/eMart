@@ -1,6 +1,7 @@
 import Header from '../../components/Header'
 import NavigationBar from '../../components/NavigationBar'
 import './style.css'
+import { useNavigate } from 'react-router-dom'
 import { IoReorderFourOutline } from 'react-icons/io5'
 import { MdOutlinePayment } from 'react-icons/md'
 import { CiDeliveryTruck } from 'react-icons/ci'
@@ -9,6 +10,7 @@ import { RiRefund2Line } from 'react-icons/ri'
 import { IoSettingsOutline } from 'react-icons/io5'
 import { IoLocationOutline } from 'react-icons/io5'
 function Mine() {
+    const navigate = useNavigate()
     return (
         <div className="mine-page page">
             <Header title="我的" className="header" />
@@ -56,7 +58,10 @@ function Mine() {
                     <RiRefund2Line className="option-icon" />
                     <span className="option-title">退款/售后</span>
                 </div>
-                <div className="setting option-item last">
+                <div
+                    className="setting option-item last"
+                    onClick={() => navigate('/setting')}
+                >
                     <IoSettingsOutline className="option-icon" />
                     <span className="option-title">设置</span>
                 </div>

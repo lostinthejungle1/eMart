@@ -11,6 +11,7 @@ import ProtectedRoute from './components/ProtectedRoute'
 import Cart from './containers/Cart'
 import Mine from './containers/Mine'
 import Detail from './containers/Detail'
+import Setting from './containers/Setting'
 
 const router = createBrowserRouter([
     {
@@ -69,6 +70,14 @@ const router = createBrowserRouter([
         element: (
             <ProtectedRoute>
                 <Detail />
+            </ProtectedRoute>
+        ),
+    },
+    {
+        path: '/setting',
+        element: (
+            <ProtectedRoute>
+                <Setting />
             </ProtectedRoute>
         ),
     },
