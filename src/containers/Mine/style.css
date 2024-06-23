@@ -3,3 +3,100 @@
     bottom: 0;
     width: 100%;
 }
+
+.mine-page {
+    background: linear-gradient(to bottom, #73d13d 5%, #fff 60%);
+}
+
+.mine-page .header {
+    color: #fff;
+}
+
+.mine-page .personal-info {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.15rem;
+    justify-content: space-between;
+}
+
+.mine-page .personal-info .profile-img {
+    width: 0.64rem;
+    height: 0.64rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #fff;
+}
+.mine-page .personal-info .vip {
+    width: 0.36rem;
+    height: 0.17rem;
+    line-height: 0.17rem;
+    background-color: #1bbb54;
+    font-size: 0.12rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.04rem;
+    padding: 0.05rem;
+    margin-left: 0.04rem;
+}
+.mine-page .personal-info .member-center {
+    background-color: #ffb300;
+    width: 0.72rem;
+    height: 0.32rem;
+    padding: 0.08rem 0.12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.12rem;
+    border: none;
+    border-radius: 0.08rem;
+}
+
+.mine-page .personal-info .username {
+    color: #fff;
+    font-size: 0.18rem;
+    margin-left: -1rem;
+}
+
+.mine-page .collection {
+    width: 3.5rem;
+    background-color: #fff;
+    margin: 0.2rem auto;
+    border-radius: 0.08rem;
+    display: flex;
+    padding: 0.08rem 0.2rem;
+}
+.mine-page .collection .voucher,
+.point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 0.6rem;
+}
+.mine-page .options {
+    width: 3.5rem;
+    display: flex;
+    background-color: #fff;
+    flex-wrap: wrap;
+    border-radius: 0.08rem;
+    margin: 0 auto;
+    padding: 0.19rem 0.15rem;
+    justify-content: flex-start;
+}
+.mine-page .option-item {
+    width: 0.8rem;
+    height: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.12rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.mine-page .option-icon {
+    width: 0.4rem;
+    height: 0.4rem;
+    padding: 0.04rem;
+    color: #73d13d;
+}
