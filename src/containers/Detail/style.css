@@ -169,7 +169,7 @@
     border-radius: 0.12rem;
     border: 0px solid #fff;
 }
-.pop-content .brief-block {
+.detail-page .pop-content .brief-block {
     width: 3.44rem;
     margin: 0.19rem auto 0;
     padding-bottom: 0.34rem;
@@ -179,38 +179,38 @@
     grid-template-rows: 1fr 1fr;
 }
 
-.pop-content .pop-thumbnail {
+.detail-page .pop-content .pop-thumbnail {
     width: 0.69rem;
     height: 0.69rem;
     grid-column: 1/2;
     grid-row: 1/3;
 }
 
-.pop-content .pop-title {
+.detail-page .pop-content .pop-title {
     margin-left: 0.47rem;
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
-.pop-content .pop-price {
+.detail-page .pop-content .pop-price {
     margin-left: 0.47rem;
     grid-column: 2/3;
     grid-row: 2/3;
     font-size: 0.18rem;
     color: #f81c00;
 }
-.pop-content .number-row {
+.detail-page .pop-content .number-row {
     font-size: 0.14rem;
     display: flex;
     justify-content: space-between;
     margin: 0.32rem 0.16rem 0;
 }
-.pop-content .number-input {
+.detail-page .pop-content .number-input {
     display: flex;
     gap: 0.1rem;
     font-size: 0.18rem;
 }
-.pop-content .number-input span {
+.detail-page .pop-content .number-input span {
     width: 0.28rem;
     height: 0.28rem;
     background-color: #f4f4f4;
@@ -218,7 +218,7 @@
     justify-content: center;
     align-items: center;
 }
-.pop-content .add-btn {
+.detail-page .pop-content .add-btn {
     width: 3.43rem;
     height: 0.44rem;
     background-color: #52c41a;
