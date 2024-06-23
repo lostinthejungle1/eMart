@@ -3,9 +3,9 @@ import NavigationBar from '../../components/NavigationBar'
 import './style.css'
 import { useNavigate } from 'react-router-dom'
 import { IoReorderFourOutline } from 'react-icons/io5'
-import { MdOutlinePayment } from 'react-icons/md'
+import { CiMoneyCheck1 } from 'react-icons/ci'
 import { CiDeliveryTruck } from 'react-icons/ci'
-import { RiUserReceivedLine } from 'react-icons/ri'
+import { PiPackageLight } from 'react-icons/pi'
 import { RiRefund2Line } from 'react-icons/ri'
 import { IoSettingsOutline } from 'react-icons/io5'
 import { IoLocationOutline } from 'react-icons/io5'
@@ -43,7 +43,7 @@ function Mine() {
                     <span className="option-title">全部订单</span>
                 </div>
                 <div className="payment-pending option-item">
-                    <MdOutlinePayment className="option-icon" />
+                    <CiMoneyCheck1 className="option-icon" />
                     <span className="option-title">待付款</span>
                 </div>
                 <div className="delivery-pending option-item">
@@ -51,7 +51,7 @@ function Mine() {
                     <span className="option-title">待发货</span>
                 </div>
                 <div className="receive-pending option-item">
-                    <RiUserReceivedLine className="option-icon" />
+                    <PiPackageLight className="option-icon" />
                     <span className="option-title">待收货</span>
                 </div>
                 <div className="change-and-refund option-item last">
