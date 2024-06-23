@@ -1,7 +1,7 @@
 import './style.css'
-function Header({ title }: { title: string }) {
+function Header({ title, className }: { title: string; className?: string }) {
     return (
-        <div className="header">
+        <div className={`header ${className}`}>
             <h2>{title}</h2>
         </div>
     )
