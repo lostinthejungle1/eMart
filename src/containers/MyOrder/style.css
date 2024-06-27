@@ -1,0 +1,135 @@
+.my-order-page {
+    background-color: #eef1f5;
+}
+.my-order-page .tabs {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 0.16rem;
+    background-color: #fff;
+    margin-bottom: 0.16rem;
+}
+.my-order-page .tabs .active {
+    color: #52c41a;
+    border-bottom: #52c41a 2px solid;
+    padding-bottom: 0.08rem;
+}
+
+.my-order-page .product-container {
+    width: 3.12rem;
+    height: 0.86rem;
+    display: flex;
+}
+
+.my-order-page .product-thumbnail {
+    width: 0.86rem;
+    height: 0.86rem;
+}
+
+.my-order-page .product-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.my-order-page .product-info .product-title {
+    width: 1.54rem;
+    height: 0.42rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.my-order-page .product-info .product-figure {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right;
+}
+
+.my-order-page .product-info .product-figure .product-price::before {
+    content: '￥';
+    font-size: 0.12rem;
+}
+
+.my-order-page .product-info .product-figure .product-count::before {
+    content: 'x';
+    font-size: 0.12rem;
+}
+
+.my-order-page .product-info .product-spec {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: #b1b1b1;
+    font-size: 0.12rem;
+    align-self: center;
+}
+
+.my-order-page .order-container {
+    width: 3.43rem;
+    margin: 0 auto;
+    /* border: 1px solid grey; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4rem auto 0.4rem 0.4rem;
+    grid-template-areas: 'order-time order-status' 'product product' 'order-id order-total' 'order-operation order-operation';
+    background-color: #fff;
+    padding-bottom: 0.16rem;
+}
+
+.my-order-page .order-time {
+    grid-area: order-time;
+    align-self: center;
+    justify-self: start;
+    font-size: 0.12rem;
+    color: #b1b1b1;
+    margin-left: 0.16rem;
+}
+
+.my-order-page .status {
+    grid-area: order-status;
+    align-self: center;
+    justify-self: end;
+    font-size: 0.14rem;
+    margin-right: 0.16rem;
+    color: #52c41a;
+}
+
+.my-order-page .products {
+    grid-area: product;
+    padding: 0.1rem 0.16rem;
+}
+.my-order-page .order-id {
+    grid-area: order-id;
+    align-self: center;
+    justify-self: start;
+    margin-left: 0.16rem;
+    font-size: 0.12rem;
+    color: #b1b1b1;
+}
+
+.my-order-page .order-price {
+    grid-area: order-total;
+    font-size: 0.12rem;
+    color: #b1b1b1;
+    align-self: center;
+    justify-self: end;
+    margin-right: 0.16rem;
+}
+
+.my-order-page .order-options {
+    grid-area: order-operation;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.06rem;
+    align-self: center;
+    margin-right: 0.16rem;
+}
+
+.my-order-page .order-options button {
+    background: none;
+    border: #52c41a 1px solid;
+    padding: 0.06rem 0.13rem;
+    height: 0.32rem;
+    border-radius: 0.2rem;
+    color: #52c41a;
+}
