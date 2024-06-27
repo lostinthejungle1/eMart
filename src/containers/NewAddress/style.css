@@ -1,0 +1,29 @@
+.new-address-page {
+    background-color: #e9e9e9;
+}
+
+.new-address-page .input {
+    background-color: #fff;
+    display: flex;
+    /* height: 0.48rem; */
+    width: 100%;
+    padding: 0.13rem 0.1rem;
+}
+.new-address-page .input label {
+    flex: 1;
+}
+
+.new-address-page .input input {
+    font-size: 0.16rem;
+    /* margin-left: 0.32rem; */
+    border: none;
+    flex: 3;
+}
+
+.new-address-page .default {
+    background-color: #fff;
+    margin-top: 0.1rem;
+    padding: 0.13rem 0.1rem;
+    display: flex;
+    justify-content: space-between;
+}
