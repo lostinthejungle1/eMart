@@ -13,7 +13,11 @@ function Mine() {
     const navigate = useNavigate()
     return (
         <div className="mine-page page">
-            <Header title="我的" className="header" />
+            <Header
+                title="我的"
+                className="header"
+                style={{ background: 'none' }}
+            />
             <div className="personal-info">
                 <img
                     src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/09/12/17/potter.jpg"
@@ -27,7 +31,7 @@ function Mine() {
                 <button className="member-center">会员中心</button>
             </div>
             {/* maybe this should be put in member center */}
-            {/* <div className="collection">
+            <div className="collection">
                 <div className="voucher">
                     <span>4</span>
                     <span>优惠券</span>
@@ -36,21 +40,33 @@ function Mine() {
                     <span>258</span>
                     <span>积分</span>
                 </div>
-            </div> */}
+            </div>
             <div className="options">
-                <div className="all-orders option-item">
+                <div
+                    className="all-orders option-item"
+                    onClick={() => navigate('/my-order/all')}
+                >
                     <IoReorderFourOutline className="option-icon" />
                     <span className="option-title">全部订单</span>
                 </div>
-                <div className="payment-pending option-item">
+                <div
+                    className="payment-pending option-item"
+                    onClick={() => navigate('/my-order/payment-pending')}
+                >
                     <CiMoneyCheck1 className="option-icon" />
                     <span className="option-title">待付款</span>
                 </div>
-                <div className="delivery-pending option-item">
+                <div
+                    className="delivery-pending option-item"
+                    onClick={() => navigate('/my-order/delivery-pending')}
+                >
                     <CiDeliveryTruck className="option-icon" />
                     <span className="option-title">待发货</span>
                 </div>
-                <div className="receive-pending option-item">
+                <div
+                    className="receive-pending option-item"
+                    onClick={() => navigate('/my-order/acceptance-pending')}
+                >
                     <PiPackageLight className="option-icon" />
                     <span className="option-title">待收货</span>
                 </div>
@@ -65,7 +81,10 @@ function Mine() {
                     <IoSettingsOutline className="option-icon" />
                     <span className="option-title">设置</span>
                 </div>
-                <div className="address option-item">
+                <div
+                    className="address option-item"
+                    onClick={() => navigate('/address')}
+                >
                     <IoLocationOutline className="option-icon" />
                     <span className="option-title">地址</span>
                 </div>
