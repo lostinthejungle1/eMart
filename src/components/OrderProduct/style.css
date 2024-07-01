@@ -1,0 +1,50 @@
+.order-product-container {
+    width: 3.12rem;
+    height: 0.86rem;
+    display: flex;
+    gap: 0.1rem;
+}
+
+.order-product-container .product-thumbnail {
+    width: 0.86rem;
+    height: 0.86rem;
+}
+
+.order-product-container .product-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.order-product-container .product-title {
+    width: 1.54rem;
+    height: 0.42rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.order-product-container .product-figure {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right;
+}
+
+.order-product-container .product-price::before {
+    content: '￥';
+    font-size: 0.12rem;
+}
+
+.order-product-container .product-count::before {
+    content: 'x';
+    font-size: 0.12rem;
+}
+
+.order-product-container .product-spec {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: #b1b1b1;
+    font-size: 0.12rem;
+    align-self: center;
+}
