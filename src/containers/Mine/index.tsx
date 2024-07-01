@@ -32,7 +32,7 @@ function Mine() {
             </div>
             {/* maybe this should be put in member center */}
             <div className="collection">
-                <div className="voucher">
+                <div className="voucher" onClick={() => navigate('/voucher')}>
                     <span>4</span>
                     <span>优惠券</span>
                 </div>
