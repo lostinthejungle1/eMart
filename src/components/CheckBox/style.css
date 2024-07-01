@@ -1,0 +1,23 @@
+.check-box {
+    width: 0.24rem;
+    height: 0.24rem;
+    border: 1px solid #b1b1b1;
+    border-radius: 50%;
+    position: relative;
+}
+
+.check-box.active {
+    background-color: #73d13d;
+    border: none;
+}
+
+.check-box.active .circle {
+    width: 0.12rem;
+    height: 0.12rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #fff;
+}
