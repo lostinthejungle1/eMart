@@ -1,3 +1,5 @@
+import CheckBox from '../../components/CheckBox'
+
 function Product({
     product_id,
     thumbnail_url,
@@ -23,10 +25,10 @@ function Product({
 }) {
     return (
         <div className="product-container">
-            <div
-                className={`check-box ${selected ? 'active' : ''}`}
+            <CheckBox
+                selected={selected}
                 onClick={() => handleCheckBoxHandler(product_id)}
-            ></div>
+            />
             <img
                 className="product-img"
                 src="https://c8.alamy.com/comp/CF9DGC/strawberry-CF9DGC.jpg"

@@ -1,3 +1,5 @@
+import CheckBox from '../../components/CheckBox'
+
 function Checkout({
     totalPrice,
     totalCount,
@@ -5,6 +7,7 @@ function Checkout({
     checkoutHandler,
     getTotalPrice,
     getTotalCount,
+    selectAll,
 }: {
     totalPrice: number
     totalCount: number
@@ -12,11 +15,12 @@ function Checkout({
     checkoutHandler: () => void
     getTotalPrice: () => number
     getTotalCount: () => number
+    selectAll: boolean
 }) {
     return (
         <div className="checkout-container">
             <div className="select-all">
-                <div className="checkbox" onClick={selectAllHandler}></div>
+                <CheckBox selected={selectAll} onClick={selectAllHandler} />
                 全选
             </div>
             <div className="total">

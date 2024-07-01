@@ -12,18 +12,6 @@
     justify-content: space-between;
 }
 
-.cart-page .product-container .check-box {
-    width: 0.24rem;
-    height: 0.24rem;
-    border: 1px solid #b1b1b1;
-    border-radius: 50%;
-}
-
-.cart-page .product-container .check-box.active {
-    background-color: #73d13d;
-    border: none;
-}
-
 .cart-page .product-container .product-img {
     width: 0.96rem;
     height: 0.96rem;

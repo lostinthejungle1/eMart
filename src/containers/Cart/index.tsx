@@ -137,6 +137,7 @@ function Cart() {
                 checkoutHandler={() => {}}
                 getTotalPrice={getTotalPrice}
                 getTotalCount={getTotalCount}
+                selectAll={selectAll}
             />
             <NavigationBar current="cart" className="nav-bar" />
         </div>
