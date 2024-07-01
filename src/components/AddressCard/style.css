@@ -1,0 +1,53 @@
+.address-card {
+    background-color: #fff;
+    margin-bottom: 0.08rem;
+    padding: 0.15rem 0.16rem 0;
+    /* height: 1.28rem; */
+}
+
+.address-card .address-info {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 0.1rem;
+}
+.address-card .address-info .name {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.address-card .address-info .phone {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.address-card .address-info .address {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    color: #b1b1b1;
+    margin-top: 0.04rem;
+}
+
+.address-card .edit-btns {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #d0d9db;
+    height: 0.48rem;
+    align-items: center;
+}
+
+.address-card button {
+    border: 1px solid #d0d9db;
+    background-color: #fff;
+    padding: 0.06rem 0.1rem;
+    border-radius: 0.05rem;
+    margin-left: 0.08rem;
+}
+
+.address-card .default {
+    background-color: #b7eb8f;
+    color: #237804;
+    font-size: 0.12rem;
+    padding: 0.01rem 0.04rem;
+    border-radius: 0.04rem;
+}
