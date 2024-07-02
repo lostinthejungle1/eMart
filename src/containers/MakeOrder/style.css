@@ -1,0 +1,140 @@
+.makeorder-page {
+    background-color: #e9e9e9;
+}
+.makeorder-page .address-box {
+    position: relative;
+}
+.makeorder-page .address-box .address-icon {
+    position: absolute;
+    right: 0.16rem;
+    bottom: 0.1rem;
+    /* transform: translateY(-50%); */
+    color: #73d13d;
+    font-size: 0.22rem;
+}
+.makeorder-page .delivery-time {
+    padding: 0.16rem;
+    background-color: #fff;
+    margin-bottom: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.adm-picker-header-button {
+    color: #73d13d;
+}
+.makeorder-page .delivery-time .selected-time {
+    color: #b1b1b1;
+}
+.makeorder-page .product-container {
+    background-color: #fff;
+    padding: 0.16rem 0.16rem;
+    margin-bottom: 0.1rem;
+}
+.makeorder-page .product-list {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.makeorder-page .selected-voucher {
+    background-color: #fff;
+    padding: 0.16rem 0.16rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.1rem;
+}
+
+.makeorder-page .voucher-name {
+    color: #b1b1b1;
+}
+
+.makeorder-page .voucher-popover .popover-content {
+    padding: 0.1rem 0.1rem 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.makeorder-page .voucher-container .status {
+    display: none;
+}
+
+.makeorder-page .voucher-container {
+    position: relative;
+}
+.makeorder-page .voucher-container .check-box {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.makeorder-page .voucher-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    margin-top: 0.1rem;
+}
+
+.makeorder-page .summary {
+    padding: 0.16rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.makeorder-page .summary-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.makeorder-page .order-product-container {
+    width: 100%;
+}
+
+.makeorder-page .check-out {
+    height: 0.64rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    display: flex;
+    padding: 0.16rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.makeorder-page .submit-order-btn {
+    width: 1.43rem;
+    height: 0.44rem;
+    color: #fff;
+    background-color: #73d13d;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 0.14rem;
+}
+
+.makeorder-page .address-popover-content {
+    padding: 0.1rem;
+}
+
+.makeorder-page .address-popover-title {
+    text-align: center;
+}
+
+.makeorder-page .address-popover-btn {
+    width: 3.43rem;
+    height: 0.44rem;
+    background-color: #73d13d;
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 0.14rem;
+}
+
+.makeorder-page .free-shipping {
+    color: red;
+    text-decoration: line-through;
+}
