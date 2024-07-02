@@ -5,7 +5,7 @@ type product = {
     price: number
     thumbnail_url: string
     count: number
-    spec: string
+    specifications: string
 }
 function OrderProduct({ product }: { product: product }) {
     return (
@@ -17,7 +17,7 @@ function OrderProduct({ product }: { product: product }) {
             />
             <div className="product-info">
                 <div className="product-title">{product.title}</div>
-                <div className="product-spec">{product.spec}</div>
+                <div className="product-spec">{product.specifications}</div>
                 <div className="product-figure">
                     <span className="product-price">{product.price}</span>
                     <span className="product-count">{product.count}</span>

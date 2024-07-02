@@ -3,6 +3,8 @@
     height: 0.86rem;
     display: flex;
     gap: 0.1rem;
+    background-color: #fff;
+    padding: 0.05rem;
 }
 
 .order-product-container .product-thumbnail {

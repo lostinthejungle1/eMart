@@ -4,6 +4,7 @@
     border: 1px solid #b1b1b1;
     border-radius: 50%;
     position: relative;
+    background-color: #fff;
 }
 
 .check-box.active {

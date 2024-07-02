@@ -1,11 +1,8 @@
-.btn-container {
-    background-color: none;
-    padding: 0.1rem 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
 .btn-container .add-address-btn {
+    position: absolute;
+    bottom: 0.1rem;
+    left: 50%;
+    transform: translateX(-50%);
     width: 3.43rem;
     height: 0.44rem;
     display: flex;
