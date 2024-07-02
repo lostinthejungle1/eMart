@@ -1,11 +1,11 @@
-import Product from './Product'
+import OrderProduct from '../../components/OrderProduct'
 type product = {
     product_id: number
     title: string
     price: number
     thumbnail_url: string
     count: number
-    spec: string
+    specifications: string
 }
 
 type order = {
@@ -45,7 +45,7 @@ function Order({
             <span className="status">{getStatusName(order.order_status)}</span>
             <div className="products">
                 {order.products.map((product) => (
-                    <Product product={product} key={product.product_id} />
+                    <OrderProduct product={product} key={product.product_id} />
                 ))}
             </div>
             <div className="order-id">订单号：{order.order_id}</div>

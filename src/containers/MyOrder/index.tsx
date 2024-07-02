@@ -12,7 +12,7 @@ type product = {
     price: number
     thumbnail_url: string
     count: number
-    spec: string
+    specifications: string
 }
 type order = {
     order_id: number
