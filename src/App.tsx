@@ -12,6 +12,12 @@ import Cart from './containers/Cart'
 import Mine from './containers/Mine'
 import Detail from './containers/Detail'
 import Setting from './containers/Setting'
+import AllOrder from './containers/MyOrder'
+import MyOrder from './containers/MyOrder'
+import Address from './containers/Address'
+import NewAddress from './containers/NewAddress'
+import Voucher from './containers/Voucher'
+import MakeOrder from './containers/MakeOrder'
 
 const router = createBrowserRouter([
     {
@@ -78,6 +84,46 @@ const router = createBrowserRouter([
         element: (
             <ProtectedRoute>
                 <Setting />
+            </ProtectedRoute>
+        ),
+    },
+    {
+        path: '/my-order/:status',
+        element: (
+            <ProtectedRoute>
+                <MyOrder />
+            </ProtectedRoute>
+        ),
+    },
+    {
+        path: '/address',
+        element: (
+            <ProtectedRoute>
+                <Address />
+            </ProtectedRoute>
+        ),
+    },
+    {
+        path: '/new-address/:status',
+        element: (
+            <ProtectedRoute>
+                <NewAddress />
+            </ProtectedRoute>
+        ),
+    },
+    {
+        path: '/voucher',
+        element: (
+            <ProtectedRoute>
+                <Voucher />
+            </ProtectedRoute>
+        ),
+    },
+    {
+        path: '/make-order',
+        element: (
+            <ProtectedRoute>
+                <MakeOrder />
             </ProtectedRoute>
         ),
     },
