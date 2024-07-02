@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
 import Header from '../../components/Header'
 import { useRequest } from '../../hooks'
-import VoucherBox from './VoucherBox'
+
 import './style.css'
 import ReturnBtn from '../../components/ReturnBtn'
+import VoucherBox from '../../components/VoucherBox'
 
-interface Voucher {
+interface voucher {
     id: string
     code: string
     expiry_date: string
@@ -18,7 +19,7 @@ interface Voucher {
 }
 
 function Voucher() {
-    const { data, loading, error } = useRequest<Voucher[]>(
+    const { data, loading, error } = useRequest<voucher[]>(
         process.env.REACT_APP_API_URL + '/vouchers/',
         'GET'
     )
