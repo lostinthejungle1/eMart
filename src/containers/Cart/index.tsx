@@ -7,6 +7,7 @@ import axios from 'axios'
 import { getToken } from '../../utils'
 import Product from './Product'
 import { debounce } from 'lodash'
+import { useNavigate } from 'react-router-dom'
 
 type product = {
     id: number
@@ -21,6 +22,8 @@ type product = {
 function Cart() {
     const [cart, setCart] = useState<Array<product>>([])
     const [isCartInitialized, setIsCartInitialized] = useState(false)
+    const navigate = useNavigate()
+
     useEffect(() => {
         axios
             .get(process.env.REACT_APP_API_URL! + '/cart', {
@@ -112,6 +115,11 @@ function Cart() {
         )
     }
 
+    const checkoutHandler = () => {
+        const selectedItems = cart.filter((item) => item.selected)
+        navigate('/make-order', { state: { selectedItems } })
+    }
+
     return (
         <div className="cart-page">
             <Header title="购物车" />
@@ -134,7 +142,7 @@ function Cart() {
                 totalCount={1}
                 totalPrice={2}
                 selectAllHandler={selectAllHandler}
-                checkoutHandler={() => {}}
+                checkoutHandler={checkoutHandler}
                 getTotalPrice={getTotalPrice}
                 getTotalCount={getTotalCount}
                 selectAll={selectAll}
