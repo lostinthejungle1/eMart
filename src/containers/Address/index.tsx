@@ -3,7 +3,7 @@ import ReturnBtn from '../../components/ReturnBtn'
 import Header from '../../components/Header'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import AddressCard from './AddressCard'
+import AddressCard from '../../components/AddressCard'
 import { AddressType } from './type'
 import { getToken } from '../../utils'
 import { useNavigate } from 'react-router-dom'
@@ -36,6 +36,7 @@ function Address() {
                         address={address}
                         key={address.address_id}
                         deleteAddress={deleteAddress}
+                        showBtns={true}
                     />
                 ))}
             </div>
